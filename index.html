@@ -1,18 +1,301 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Notes App</title>
-  </head>
-  <body>
-    <button class="add" id="add">
-      <i class="fas fa-plus"></i> Add note
-    </button>
+<html lang="es">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.2.2/marked.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- Font Awesome CDN Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom CSS File Link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a href="#" class="logo">Al Majaz <i class="fas fa-mug-hot"></i></a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#review">review</a>
+            <a href="#book">book</a>
+        </nav>
+
+        <a href="#" class="btn">book a table</a>
+    </header>
+
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+                <h3>fresh Food and Cafeteria</h3>
+                <a href="#" class="btn">buy one now</a>
+            </div>
+
+            <div class="image">
+                <img src="image/home-img-1.png" class="main-home-image" alt="">
+            </div>
+        </div>
+
+        <div class="image-slider">
+            <img src="image/home-img-1.png" alt="">
+            <img src="image/home-img-2.png" alt="">
+            <img src="image/home-img-3.png" alt="">
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <h1 class="heading">about us <span></span></h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="image/about-img.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3 class="title">what's make our special!</h3>
+                <p>Welcome to Al Majaz cafeteria,  we prioritize quality, taste, and convenience! Our goal is to provide a warm and welcoming space where you can enjoy freshly made meals, snacks, and drinks throughout the day. 
+                Whether you're here for a quick bite or a relaxing break, we offer a variety of options to suit all tastes and preferences.</p>
+                <a href="#" class="btn">read more</a>
+                <div class="icons-container">
+                    <div class="icons">
+                        <img src="image/about-icon-1.png" alt="">
+                        <h3>quality Foods</h3>
+                    </div>
+                    <div class="icons">
+                        <img src="image/about-icon-2.png" alt="">
+                        <h3>our branches</h3>
+                    </div>
+                    <div class="icons">
+                        <img src="image/about-icon-3.png" alt="">
+                        <h3>free delivery</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu" id="menu">
+        <h1 class="heading">Our Popular Menu<span></span></h1>
+
+        <div class="box-container">
+            <a href="#" class="box">
+                <img src="image/dosa.png" alt="">
+                <div class="content">
+                    <h3>our special Dosa</h3>
+                    <p>Our Dosai is a crispy, golden-brown crepe with a soft interior, offering a delightful balance of savory flavors. Served with chutneys and sambar, it’s a classic South Indian dish that’s both satisfying and delicious.</p>
+                    <span>Only 4 Dhs</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/shawarma.png" alt="">
+                <div class="content">
+                    <h3>our special Shawarma</h3>
+                    <p>Our Shawarma features tender, seasoned meat, typically chicken or lamb, wrapped in warm, soft pita bread. With fresh veggies and creamy garlic sauce, it’s a flavorful, savory delight that’s perfect for any meal.</p>
+                    <span>Only 5 Dhs</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/menu-3.png" alt="">
+                <div class="content">
+                    <h3>our special coffee</h3>
+                    <p>Our coffee is rich, smooth, and aromatic, brewed to perfection to deliver a bold and satisfying flavor. Whether you prefer it black, with milk, or as a specialty, it's the perfect pick-me-up for any time of day.</p>
+                    <span>Only 2 Dhs</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/menu-4.png" alt="">
+                <div class="content">
+                    <h3>our special Tea</h3>
+                    <p>Our tea is freshly brewed, offering a fragrant and soothing experience with every sip. Whether you prefer classic black, aromatic chai, or refreshing green tea, it's the perfect blend to relax and unwind.</p>
+                    <span>Only 1 Dhs</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/panipoori.png" alt="">
+                <div class="content">
+                    <h3>our special Pani Poori</h3>
+                    <p>Our Pani Puri is a delightful street food, featuring crispy puris filled with tangy tamarind water, spicy chutneys, and a mix of chickpeas and potatoes. It's a burst of flavor in every bite, offering a perfect combination of crunchy, spicy, and refreshing tastes.</p>
+                    <span>Only 3 Dhs</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/juice.png" alt="">
+                <div class="content">
+                    <h3>our Fresh Juice</h3>
+                    <p>Our fresh juice is made from the juiciest, ripest fruits, offering a refreshing, naturally sweet taste. 
+                     Whether it's citrusy, tropical, or a custom blend, it's the perfect drink to energize and hydrate you.</p>
+                    <span>Only 5 Dhs</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- REVIEW -->
+    <section class="review" id="review">
+        <h1 class="heading">what people says<span></span></h1>
+
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-1.png" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Absolutely love the food here! From the hot snacks to the refreshing juices, everything is always fresh and delicious.</p>
+                    <h3>Abdulla</h3>
+                    <span>satisfied client</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-2.png" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Every visit is a treat! The fresh juices and sandwiches are amazing, and the atmosphere is always so welcoming."</p>
+                    <h3>Neha</h3>
+                    <span>satisfied client</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-3.png" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Love the variety and quality of food! The coffee and snacks are always on point, making it my favorite place to stop by.</p>
+                    <h3>Nasir</h3>
+                    <span>satisfied client</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-4.png" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>The food is always fresh and tasty, and the service is excellent. A perfect spot for a quick, satisfying meal!</p>
+                    <h3>Fathima</h3>
+                    <span>satisfied client</span>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- BOOK -->
+    <section class="book" id="book">
+        <h1 class="heading">Reserve a table<span></span></h1>
+
+        <form action="">
+            <input type="text" placeholder="Name" class="box">
+            <input type="email" placeholder="Email" class="box">
+            <input type="number" placeholder="Number" class="box">
+            <textarea name="" placeholder="Message" class="box" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" class="btn">
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> india</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> UAE</a>
+                
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"><i class="fas fa-arrow-right"></i> home</a>
+                <a href="#about"><i class="fas fa-arrow-right"></i> about</a>
+                <a href="#menu"><i class="fas fa-arrow-right"></i> menu</a>
+                <a href="#review"><i class="fas fa-arrow-right"></i> review</a>
+                <a href="#book"><i class="fas fa-arrow-right"></i> book</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i> +971561787182</a>
+                <a href="#"><i class="fas fa-phone"></i> 0612345678</a>
+                <a href="#"><i class="fas fa-envelope"></i> coffee@gmail.com</a>
+                <a href="#"><i class="fas fa-envelope"></i> Umm Al Quwain, UAE</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+            </div>
+        </div>
+
+        <div class="credit">created by <span>Md Abdulla</span> | all rights reserved @2025</div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS File Link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
 </html>
